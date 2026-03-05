@@ -38,9 +38,9 @@ Copy `mappings.json` and fill in the role IDs you want to migrate from and to:
 
 ```json
 {
-  "<existing-admin-role-id>":    "<admin-no-deploy-role-id>",
-  "<existing-editor-role-id>":   "<editor-no-deploy-role-id>",
-  "<existing-readonly-role-id>": "<readonly-no-deploy-role-id>"
+  "<old-role-id-1>": "<new-role-id-1>",
+  "<old-role-id-2>": "<new-role-id-2>",
+  "<old-role-id-3>": "<new-role-id-3>"
 }
 ```
 
