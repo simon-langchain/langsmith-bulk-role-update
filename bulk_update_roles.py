@@ -195,15 +195,15 @@ if __name__ == "__main__":
         description="Bulk update LangSmith workspace member roles.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    parser.add_argument("--api-key", default=os.environ.get("LANGSMITH_API_KEY"),
+    parser.add_argument("-k", "--api-key", default=os.environ.get("LANGSMITH_API_KEY"),
                         help="LangSmith API key (or set LANGSMITH_API_KEY env var).")
-    parser.add_argument("--base-url", default=os.environ.get("LANGSMITH_BASE_URL", "https://api.smith.langchain.com"),
+    parser.add_argument("-u", "--base-url", default=os.environ.get("LANGSMITH_BASE_URL", "https://api.smith.langchain.com"),
                         help="LangSmith base URL (default: https://api.smith.langchain.com).")
-    parser.add_argument("--mappings-file", metavar="FILE",
+    parser.add_argument("-m", "--mappings-file", metavar="FILE",
                         help='Path to a JSON file mapping old role IDs to new role IDs: {"<old-id>": "<new-id>", ...}')
-    parser.add_argument("--dry-run", action="store_true", help="Preview changes without applying them.")
-    parser.add_argument("--list-roles", action="store_true", help="Print current org role IDs and exit.")
-    parser.add_argument("--list-users", action="store_true", help="Print all workspace members and their current roles, then exit.")
+    parser.add_argument("-d", "--dry-run", action="store_true", help="Preview changes without applying them.")
+    parser.add_argument("-r", "--list-roles", action="store_true", help="Print current org role IDs and exit.")
+    parser.add_argument("-l", "--list-users", action="store_true", help="Print all workspace members and their current roles, then exit.")
     args = parser.parse_args()
 
     if not args.api_key:

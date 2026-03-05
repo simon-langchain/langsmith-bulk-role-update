@@ -75,12 +75,13 @@ Swap the keys and values in your mappings file (see `mappings-reverse.json`) and
 
 | Flag | Description |
 |------|-------------|
-| `--api-key` | LangSmith API key. Alternatively set `LANGSMITH_API_KEY`. |
-| `--base-url` | Base URL (default: `https://api.smith.langchain.com`). Alternatively set `LANGSMITH_BASE_URL`. |
-| `--mappings-file` | Path to JSON file mapping old role IDs to new role IDs. |
-| `--dry-run` | Preview changes without applying them. |
-| `--list-roles` | Print all org roles with IDs and exit. |
-| `--list-users` | Print all workspace members and their current roles and exit. |
+| `-h`, `--help` | Show help message. |
+| `-k`, `--api-key` | LangSmith API key. Alternatively set `LANGSMITH_API_KEY`. |
+| `-u`, `--base-url` | Base URL (default: `https://api.smith.langchain.com`). Alternatively set `LANGSMITH_BASE_URL`. |
+| `-m`, `--mappings-file` | Path to JSON file mapping old role IDs to new role IDs. |
+| `-d`, `--dry-run` | Preview changes without applying them. |
+| `-r`, `--list-roles` | Print all org roles with IDs. |
+| `-l`, `--list-users` | Print all workspace members and their current roles. |
 
 ## Notes
 
